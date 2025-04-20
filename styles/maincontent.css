@@ -78,25 +78,78 @@
     height: 500px;                        
 }
 
-.line {
+.skills-section {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+}
+  
+.skills-title {
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;       
+    width: 100%;            
+    padding-left: 20px;     
+    max-width: 1000px;      
+    margin: 0 auto 20px;    
+}
+  
+.skills-columns {
+    display: flex;
+    justify-content: center;
+    gap: 80px; 
+    flex-wrap: wrap;
+}
+  
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;     
+    margin: 20px 0; 
+}
+  
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 12px 0;
+}
+  
+.skill-item img {
+    width: 30px;
+    height: auto;
+}
+  
+.skill-item span {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-weight: 500;
+}
+
+
+.line1,
+.line2 {
     height: 3px;
     width: 45%;
     background-color: rgba(0, 0, 0, 0.13);
-    margin: 5px auto;
-    margin-top: 15px;
-    z-index: 10;
+    margin-top: 20px;
+    margin-bottom: 5px; 
+    z-index: 5;
 }
 
 .resume-otherlinks {
     display: flex;
     justify-content: center;
     gap: 20px;
-    padding: 10px 24px;
+    padding: 5px 20px;
     margin: 20px auto;
     z-index: 10;
     position: relative;
 }
-  
 
 .resume-button,
 .github-button,
