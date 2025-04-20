@@ -75,6 +75,11 @@
 
     position: relative; 
     z-index: 10;  
+
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(4px);
+    border-radius: 16px;
+    padding: 16px 24px;
 }
 
 .resume-button,
@@ -101,4 +106,12 @@
 .linkedin-button:hover {
   opacity: 0.7;
   transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    .resume-otherlinks {
+      flex-direction: column;
+      gap: 12px;
+      padding: 20px;
+    }
 }
