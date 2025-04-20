@@ -1,3 +1,21 @@
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px); /* optional slight lift */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+    .resume-otherlinks {
+      flex-direction: column;
+      gap: 12px;
+      padding: 20px;
+    }
+}
 
 .math-symbols {
     position: fixed;             
@@ -17,8 +35,11 @@
 .math-symbols span {
     position: absolute;
     font-size: 160px;
-    color: rgba(0, 0, 0, 0.04);   
+    color: rgba(0, 0, 0, 0.04);
     user-select: none;
+
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 0.2s; /* optional: delay for staging */
 }
 
 
@@ -80,6 +101,7 @@
     backdrop-filter: blur(4px);
     border-radius: 16px;
     padding: 16px 24px;
+    animation: fadeIn 1s ease-in-out forwards;
 }
 
 .resume-button,
@@ -108,10 +130,3 @@
   transform: scale(1.05);
 }
 
-@media (max-width: 600px) {
-    .resume-otherlinks {
-      flex-direction: column;
-      gap: 12px;
-      padding: 20px;
-    }
-}
