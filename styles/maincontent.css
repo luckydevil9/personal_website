@@ -87,34 +87,31 @@
     z-index: 10;
 }
 
-.resume-otherlinks{
+.resume-otherlinks {
     display: flex;
     justify-content: center;
-    gap: 20px; 
-    margin-top: 10px;
-    margin-bottom: 30px;
-
-    position: relative; 
-    z-index: 10;  
-
-    background: rgba(255, 255, 255, 0.85); /* solid enough to mask symbols */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05); /* optional soft glow */
-    border-radius: 16px;
+    gap: 20px;
     padding: 16px 24px;
-    animation: fadeIn 1s ease-in-out forwards;
+    margin: 20px auto;
+    z-index: 10;
+    position: relative;
 }
+  
 
 .resume-button,
 .github-button,
 .linkedin-button {
-    background: rgba(200, 200, 200, 0.2); 
+    background: #ffffff; 
     color: #333;
-    border: 5px solid rgba(0, 0, 0, 0.13);
+    border: 4px solid rgba(0, 0, 0, 0.1); 
     border-radius: 12px;
     padding: 12px 24px;
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); 
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 16px;
