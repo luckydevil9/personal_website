@@ -8,6 +8,10 @@
     height: 100dvh;
     z-index: 0;                   
     pointer-events: none;
+    mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+    contain: strict;
+    overflow: hidden;
 }
   
 .math-symbols span {
@@ -68,6 +72,8 @@
     gap: 20px; 
     margin-top: 10px;
     margin-bottom: 30px;
+
+    position: relative; 
     z-index: 10;  
 }
 
