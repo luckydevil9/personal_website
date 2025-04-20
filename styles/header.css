@@ -38,7 +38,8 @@
     transition: background 0.3s ease, transform 0.2s ease;
 }
 
-.home-button:hover{
+.home-button:hover,
+.projects-button:hover {
     opacity: 0.7;
     transform: scale(1.05);
     text-decoration: underline;
@@ -46,11 +47,4 @@
     text-underline-offset: 4px;
 }
 
-.projects-button:hover{
-    opacity: 0.7;
-    transform: scale(1.05);
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 4px;
-}
 
