@@ -97,8 +97,8 @@
     position: relative; 
     z-index: 10;  
 
-    background: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.85); /* solid enough to mask symbols */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05); /* optional soft glow */
     border-radius: 16px;
     padding: 16px 24px;
     animation: fadeIn 1s ease-in-out forwards;
