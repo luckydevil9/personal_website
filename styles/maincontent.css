@@ -200,17 +200,20 @@
 
 @media (max-width: 600px) {
 
-    skills-columns {
+    .skills-columns {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 20px;
       }
     
-      .skills-column {
-        width: 45%; 
+    .skills-column {
+        width: 45%; /* Side-by-side on mobile */
         padding: 0;
-      }
+    }
     
-      .skill-item {
-        justify-content: start;
+    .skill-item {
+        justify-content: flex-start;
     }
    
    
@@ -259,3 +262,5 @@
         margin-left: 200px; 
     }
 }
+
+
