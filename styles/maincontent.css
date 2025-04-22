@@ -226,7 +226,7 @@
     .github-button,
     .linkedin-button {
         width: 30%;                
-        min-width: 100px;
+        min-width: 120px;
         margin: 0 auto;
     }
 
