@@ -248,7 +248,7 @@
         flex-direction: row;
         align-items: flex-start;
         justify-content: center;
-        gap: 40px;
+        gap: 30px;
     }
   
     .intro-text {
