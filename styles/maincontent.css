@@ -203,7 +203,9 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;  
-        gap: 40px;                
+        gap: 40px;
+        max-width: 1000px;
+        margin: 0 auto;                
     }
     
     .skills-column {
@@ -215,6 +217,12 @@
     
     .skill-item {
         justify-content: flex-start;
+    }
+
+    .skill-item span {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
    
    
