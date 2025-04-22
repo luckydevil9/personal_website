@@ -202,12 +202,12 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;  /* ⬅ centers the columns */
-        gap: 16px;                /* ⬅ spacing between columns */
+        justify-content: center;  
+        gap: 40px;                
     }
     
     .skills-column {
-        width: 45%;               /* ⬅ side-by-side */
+        width: 45%;               
         box-sizing: border-box;
         padding: 0;
         margin: 0;
