@@ -207,7 +207,7 @@
     
     .skills-column {
         width: 45%;
-        margin-bottom: 20px;  
+        margin-bottom: 0;  
         padding: 0;
     }
     
@@ -225,8 +225,8 @@
     .resume-button,
     .github-button,
     .linkedin-button {
-        width: 90%;                
-        max-width: 220px;
+        width: 30%;                
+        min-width: 100px;
         margin: 0 auto;
     }
 
