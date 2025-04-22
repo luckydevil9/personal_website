@@ -199,17 +199,19 @@
 @media (max-width: 600px) {
 
     .skills-columns {
+        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
-        gap: 40px;
-      }
+        justify-content: center;  /* ⬅ centers the columns */
+        gap: 16px;                /* ⬅ spacing between columns */
+    }
     
     .skills-column {
-        width: 45%;
-        margin-bottom: 0;  
+        width: 45%;               /* ⬅ side-by-side */
+        box-sizing: border-box;
         padding: 0;
-    }
+        margin: 0;
+    } 
     
     .skill-item {
         justify-content: flex-start;
