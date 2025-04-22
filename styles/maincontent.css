@@ -9,13 +9,6 @@
     }
 }
 
-@media (max-width: 600px) {
-    .resume-otherlinks {
-      flex-direction: column;
-      gap: 12px;
-      padding: 20px;
-    }
-}
 
 .math-symbols {
     position: fixed;             
@@ -86,43 +79,8 @@
     max-width: 500px;
     padding: 0 10px;
 }
+
   
-@media (min-width: 900px) {
-    .flex-container {
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: center;
-        gap: 60px;
-    }
-  
-    .intro-text {
-        order: 2; 
-        text-align: left;
-        padding-top: 0;
-        margin-left: 30px;
-    }
-
-    .photo-container{
-        order: 1;
-    }
-
-    .skills-content {
-        padding-left: 0;
-        margin-left: 40px;
-        margin-right:0;  
-    }
-
-    .skills-columns {
-        justify-content: flex-start; 
-    }
-
-    .skills-title {
-        margin-left: 200px; 
-    }
-}
-  
-  
-
 .title {
     text-align: center;
     font-size: 40px;
@@ -164,9 +122,10 @@
   
 .skills-columns {
     display: flex;
-    gap: 80px; 
     flex-wrap: wrap;
-}
+    gap: 30px;
+    justify-content: center;
+  }
   
 .skill-item {
     display: flex;
@@ -238,3 +197,65 @@
   transform: scale(1.05);
 }
 
+
+@media (max-width: 600px) {
+
+    skills-columns {
+        gap: 20px;
+      }
+    
+      .skills-column {
+        width: 45%; 
+        padding: 0;
+      }
+    
+      .skill-item {
+        justify-content: start;
+    }
+   
+   
+    .resume-otherlinks {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 20px;
+    }
+
+    .resume-button,
+    .github-button,
+    .linkedin-button {
+      width: fit-content; /* or a fixed width like 220px */
+      max-width: 90%;
+      text-align: center;
+    }
+
+   
+}
+
+@media (min-width: 900px) {
+    .flex-container {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 60px;
+    }
+  
+    .intro-text {
+        order: 2; 
+        text-align: left;
+        padding-top: 0;
+        margin-left: 30px;
+    }
+
+    .photo-container{
+        order: 1;
+    }
+
+    .skills-columns {
+        justify-content: center; 
+    }
+
+    .skills-title {
+        margin-left: 200px; 
+    }
+}
